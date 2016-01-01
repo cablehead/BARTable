@@ -7,21 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13BB6DC1C3618A000C72F2B /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CA1C361653007800B8 /* logger.swift */; };
+		A13BB6DD1C3618A800C72F2B /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C71C361653007800B8 /* Station.swift */; };
+		A13BB6DE1C3618AC00C72F2B /* bart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C81C361653007800B8 /* bart.swift */; };
+		A13BB6DF1C3618CD00C72F2B /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CF1C361653007800B8 /* SWXMLHash.swift */; };
 		A182505A1C3615E500774B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18250591C3615E500774B1F /* AppDelegate.swift */; };
-		A182505C1C3615E500774B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182505B1C3615E500774B1F /* ViewController.swift */; };
-		A182505F1C3615E500774B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A182505D1C3615E500774B1F /* Main.storyboard */; };
 		A18250611C3615E500774B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18250601C3615E500774B1F /* Assets.xcassets */; };
 		A18250641C3615E500774B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18250621C3615E500774B1F /* LaunchScreen.storyboard */; };
+		A1EB37D01C361653007800B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EB37C41C361653007800B8 /* Assets.xcassets */; };
+		A1EB37D11C361653007800B8 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A1EB37C51C361653007800B8 /* Base.lproj */; };
+		A1EB37D21C361653007800B8 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C61C361653007800B8 /* IntroController.swift */; };
+		A1EB37D31C361653007800B8 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C71C361653007800B8 /* Station.swift */; };
+		A1EB37D41C361653007800B8 /* bart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C81C361653007800B8 /* bart.swift */; };
+		A1EB37D51C361653007800B8 /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C91C361653007800B8 /* WatchController.swift */; };
+		A1EB37D61C361653007800B8 /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CA1C361653007800B8 /* logger.swift */; };
+		A1EB37D71C361653007800B8 /* S2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CB1C361653007800B8 /* S2Controller.swift */; };
+		A1EB37D81C361653007800B8 /* DController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CC1C361653007800B8 /* DController.swift */; };
+		A1EB37D91C361653007800B8 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CD1C361653007800B8 /* MainController.swift */; };
+		A1EB37DA1C361653007800B8 /* StationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CE1C361653007800B8 /* StationController.swift */; };
+		A1EB37DB1C361653007800B8 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37CF1C361653007800B8 /* SWXMLHash.swift */; };
+		A1EB37E31C361810007800B8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EB37E21C361810007800B8 /* NotificationCenter.framework */; };
+		A1EB37E61C361810007800B8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37E51C361810007800B8 /* TodayViewController.swift */; };
+		A1EB37ED1C361810007800B8 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1EB37E01C361810007800B8 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1EB37EB1C361810007800B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A182504E1C3615E500774B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1EB37DF1C361810007800B8;
+			remoteInfo = TodayWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1EB37F11C361810007800B8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1EB37ED1C361810007800B8 /* TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A18250561C3615E500774B1F /* BARTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BARTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18250591C3615E500774B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A182505B1C3615E500774B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A182505E1C3615E500774B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A18250601C3615E500774B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A18250631C3615E500774B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A18250651C3615E500774B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1EB37C41C361653007800B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1EB37C51C361653007800B8 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		A1EB37C61C361653007800B8 /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		A1EB37C71C361653007800B8 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		A1EB37C81C361653007800B8 /* bart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bart.swift; sourceTree = "<group>"; };
+		A1EB37C91C361653007800B8 /* WatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
+		A1EB37CA1C361653007800B8 /* logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
+		A1EB37CB1C361653007800B8 /* S2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S2Controller.swift; sourceTree = "<group>"; };
+		A1EB37CC1C361653007800B8 /* DController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DController.swift; sourceTree = "<group>"; };
+		A1EB37CD1C361653007800B8 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		A1EB37CE1C361653007800B8 /* StationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationController.swift; sourceTree = "<group>"; };
+		A1EB37CF1C361653007800B8 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		A1EB37E01C361810007800B8 /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EB37E21C361810007800B8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A1EB37E51C361810007800B8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A1EB37EA1C361810007800B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +87,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1EB37DD1C361810007800B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1EB37E31C361810007800B8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				A18250581C3615E500774B1F /* BARTable */,
+				A1EB37E41C361810007800B8 /* TodayWidget */,
+				A1EB37E11C361810007800B8 /* Frameworks */,
 				A18250571C3615E500774B1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A18250561C3615E500774B1F /* BARTable.app */,
+				A1EB37E01C361810007800B8 /* TodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +120,41 @@
 		A18250581C3615E500774B1F /* BARTable */ = {
 			isa = PBXGroup;
 			children = (
+				A1EB37C41C361653007800B8 /* Assets.xcassets */,
+				A1EB37C51C361653007800B8 /* Base.lproj */,
+				A1EB37C61C361653007800B8 /* IntroController.swift */,
+				A1EB37C71C361653007800B8 /* Station.swift */,
+				A1EB37C81C361653007800B8 /* bart.swift */,
+				A1EB37C91C361653007800B8 /* WatchController.swift */,
+				A1EB37CA1C361653007800B8 /* logger.swift */,
+				A1EB37CB1C361653007800B8 /* S2Controller.swift */,
+				A1EB37CC1C361653007800B8 /* DController.swift */,
+				A1EB37CD1C361653007800B8 /* MainController.swift */,
+				A1EB37CE1C361653007800B8 /* StationController.swift */,
+				A1EB37CF1C361653007800B8 /* SWXMLHash.swift */,
 				A18250591C3615E500774B1F /* AppDelegate.swift */,
-				A182505B1C3615E500774B1F /* ViewController.swift */,
-				A182505D1C3615E500774B1F /* Main.storyboard */,
 				A18250601C3615E500774B1F /* Assets.xcassets */,
 				A18250621C3615E500774B1F /* LaunchScreen.storyboard */,
 				A18250651C3615E500774B1F /* Info.plist */,
 			);
 			path = BARTable;
+			sourceTree = "<group>";
+		};
+		A1EB37E11C361810007800B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1EB37E21C361810007800B8 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1EB37E41C361810007800B8 /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A1EB37E51C361810007800B8 /* TodayViewController.swift */,
+				A1EB37EA1C361810007800B8 /* Info.plist */,
+			);
+			path = TodayWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +167,34 @@
 				A18250521C3615E500774B1F /* Sources */,
 				A18250531C3615E500774B1F /* Frameworks */,
 				A18250541C3615E500774B1F /* Resources */,
+				A1EB37F11C361810007800B8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1EB37EC1C361810007800B8 /* PBXTargetDependency */,
 			);
 			name = BARTable;
 			productName = BARTable;
 			productReference = A18250561C3615E500774B1F /* BARTable.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A1EB37DF1C361810007800B8 /* TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1EB37EE1C361810007800B8 /* Build configuration list for PBXNativeTarget "TodayWidget" */;
+			buildPhases = (
+				A1EB37DC1C361810007800B8 /* Sources */,
+				A1EB37DD1C361810007800B8 /* Frameworks */,
+				A1EB37DE1C361810007800B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidget;
+			productName = TodayWidget;
+			productReference = A1EB37E01C361810007800B8 /* TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +207,9 @@
 				ORGANIZATIONNAME = "Andy Gayton";
 				TargetAttributes = {
 					A18250551C3615E500774B1F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A1EB37DF1C361810007800B8 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				A18250551C3615E500774B1F /* BARTable */,
+				A1EB37DF1C361810007800B8 /* TodayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +240,15 @@
 			files = (
 				A18250641C3615E500774B1F /* LaunchScreen.storyboard in Resources */,
 				A18250611C3615E500774B1F /* Assets.xcassets in Resources */,
-				A182505F1C3615E500774B1F /* Main.storyboard in Resources */,
+				A1EB37D11C361653007800B8 /* Base.lproj in Resources */,
+				A1EB37D01C361653007800B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1EB37DE1C361810007800B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +259,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A182505C1C3615E500774B1F /* ViewController.swift in Sources */,
+				A1EB37D81C361653007800B8 /* DController.swift in Sources */,
+				A1EB37DB1C361653007800B8 /* SWXMLHash.swift in Sources */,
+				A1EB37D21C361653007800B8 /* IntroController.swift in Sources */,
+				A1EB37D51C361653007800B8 /* WatchController.swift in Sources */,
+				A1EB37D91C361653007800B8 /* MainController.swift in Sources */,
+				A1EB37D31C361653007800B8 /* Station.swift in Sources */,
+				A1EB37D41C361653007800B8 /* bart.swift in Sources */,
+				A1EB37D61C361653007800B8 /* logger.swift in Sources */,
+				A1EB37DA1C361653007800B8 /* StationController.swift in Sources */,
+				A1EB37D71C361653007800B8 /* S2Controller.swift in Sources */,
 				A182505A1C3615E500774B1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1EB37DC1C361810007800B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1EB37E61C361810007800B8 /* TodayViewController.swift in Sources */,
+				A13BB6DD1C3618A800C72F2B /* Station.swift in Sources */,
+				A13BB6DE1C3618AC00C72F2B /* bart.swift in Sources */,
+				A13BB6DF1C3618CD00C72F2B /* SWXMLHash.swift in Sources */,
+				A13BB6DC1C3618A000C72F2B /* logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		A182505D1C3615E500774B1F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A182505E1C3615E500774B1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		A1EB37EC1C361810007800B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1EB37DF1C361810007800B8 /* TodayWidget */;
+			targetProxy = A1EB37EB1C361810007800B8 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		A18250621C3615E500774B1F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -249,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BARTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable;
@@ -260,10 +406,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BARTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1EB37EF1C361810007800B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1EB37F01C361810007800B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -286,6 +455,16 @@
 				A182506A1C3615E500774B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1EB37EE1C361810007800B8 /* Build configuration list for PBXNativeTarget "TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1EB37EF1C361810007800B8 /* Debug */,
+				A1EB37F01C361810007800B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
