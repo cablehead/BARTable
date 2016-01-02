@@ -15,26 +15,38 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager,
             didUpdateLocations locations: [CLLocation]) {
         let station = closest_station(locations[0])
-        print(station.desc)
+        Log(station.desc)
     }
 
      func locationManager(manager: CLLocationManager,
             didFailWithError error: NSError)  {
-        print(error)
-        print("sad face")
+        Log(String(error))
     }
 
     func locationManager(manager: CLLocationManager,
             didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        print("status", status)
-        return
-        /*
-        if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
-                self.start()
+        var statusHumanValue : String;
+        switch (status) {
+            case CLAuthorizationStatus.NotDetermined:
+                statusHumanValue = "NotDetermined"
+            case CLAuthorizationStatus.Restricted:
+                statusHumanValue = "RESTRICTED"
+            case CLAuthorizationStatus.Denied:
+                statusHumanValue = "DENIED"
+            case CLAuthorizationStatus.Authorized:
+                statusHumanValue = "ALWAYS"
+            case CLAuthorizationStatus.AuthorizedWhenInUse:
+                statusHumanValue = "When in Use"
+            default:
+                statusHumanValue = "n/a CLAuthorizationStatus"
         }
-        */
+        Log("didChangeAuthorizationStatus: \(statusHumanValue)")
+        if status == .AuthorizedAlways {
+            print("go")
+        }
     }
 }
+
 
 let lm = LocationManager()
 
