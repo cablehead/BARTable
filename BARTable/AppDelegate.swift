@@ -1,4 +1,42 @@
 import UIKit
+import CoreLocation
+
+
+class LocationManager: NSObject, CLLocationManagerDelegate {
+    let manager = CLLocationManager()
+
+	override init() {
+        super.init()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        manager.distanceFilter = 100
+    }
+
+    func locationManager(manager: CLLocationManager,
+            didUpdateLocations locations: [CLLocation]) {
+        let station = closest_station(locations[0])
+        print(station.desc)
+    }
+
+     func locationManager(manager: CLLocationManager,
+            didFailWithError error: NSError)  {
+        print(error)
+        print("sad face")
+    }
+
+    func locationManager(manager: CLLocationManager,
+            didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        print("status", status)
+        return
+        /*
+        if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
+                self.start()
+        }
+        */
+    }
+}
+
+let lm = LocationManager()
 
 
 func getApp() -> AppDelegate {
@@ -15,10 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application: UIApplication, didFinishLaunchingWithOptions
             launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        window!.rootViewController = IntroController()
-        // window!.rootViewController = S2Controller()
-
-        // window!.rootViewController = DController(code: "powl")
+        if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
+            window!.rootViewController = S2Controller()
+        } else {
+            window!.rootViewController = IntroController()
+        }
 
         window!.makeKeyAndVisible()
         return true

@@ -1,13 +1,7 @@
 import UIKit
-import CoreLocation
 
 
-
-
-class IntroController: UIViewController, CLLocationManagerDelegate {
-
-    let manager = CLLocationManager()
-
+class IntroController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,40 +49,12 @@ class IntroController: UIViewController, CLLocationManagerDelegate {
     
     func start() {
         print("start")
-        manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        manager.distanceFilter = 100
         // manager.startUpdatingLocation()
-        manager.requestLocation()
+        // manager.requestLocation()
     }
 
     func pressedOK(sender: UIButton!) {
-        manager.delegate = self
-        print(CLLocationManager.authorizationStatus() == .AuthorizedAlways)
-        if CLLocationManager.authorizationStatus() == .NotDetermined {
-            manager.requestAlwaysAuthorization()
-        } else {
-            self.start()
-        }
-    }
-
-    func locationManager(manager: CLLocationManager,
-            didUpdateLocations locations: [CLLocation]) {
-        let station = closest_station(locations[0])
-        print(station.desc)
-    }
-    
-     func locationManager(manager: CLLocationManager,
-            didFailWithError error: NSError)  {
-        print(error)
-        print("sad face")
-    }
-
-    func locationManager(manager: CLLocationManager,
-            didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        print("status", status)
-        if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
-                self.start()
-        }
+        lm.manager.requestAlwaysAuthorization()
     }
 
     override func shouldAutorotate() -> Bool {
