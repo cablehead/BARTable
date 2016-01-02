@@ -47,12 +47,6 @@ class IntroController: UIViewController {
 
     }
     
-    func start() {
-        print("start")
-        // manager.startUpdatingLocation()
-        // manager.requestLocation()
-    }
-
     func pressedOK(sender: UIButton!) {
         lm.manager.requestAlwaysAuthorization()
     }
