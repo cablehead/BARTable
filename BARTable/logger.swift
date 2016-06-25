@@ -4,6 +4,7 @@ import UIKit
 func Log(s: String) {
     NSLog(s)
 
+    /*
     let request = NSMutableURLRequest(
         URL: NSURL(string: "http://198.199.105.11:8000/")!)
     let session = NSURLSession.sharedSession()
@@ -18,11 +19,12 @@ func Log(s: String) {
         request,
          completionHandler: {
             data, response, error -> Void in
-                /*
-                print("Response: \(response)")
-                let strData = NSString(
-                   data: data!, encoding: NSUTF8StringEncoding)
-                print("Body: \(strData)") */ })
+                // print("Response: \(response)")
+                // let strData = NSString(
+                // 	data: data!, encoding: NSUTF8StringEncoding)
+                // print("Body: \(strData)")
+		})
 
     task.resume()
+    */
 }
