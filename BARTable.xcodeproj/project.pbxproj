@@ -14,6 +14,7 @@
 		A182505A1C3615E500774B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18250591C3615E500774B1F /* AppDelegate.swift */; };
 		A18250611C3615E500774B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18250601C3615E500774B1F /* Assets.xcassets */; };
 		A18250641C3615E500774B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18250621C3615E500774B1F /* LaunchScreen.storyboard */; };
+		A1C3249D1C38B30500BDE3C4 /* GTGController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3249C1C38B30500BDE3C4 /* GTGController.swift */; };
 		A1EB37D01C361653007800B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EB37C41C361653007800B8 /* Assets.xcassets */; };
 		A1EB37D11C361653007800B8 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A1EB37C51C361653007800B8 /* Base.lproj */; };
 		A1EB37D21C361653007800B8 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB37C61C361653007800B8 /* IntroController.swift */; };
@@ -61,6 +62,7 @@
 		A18250601C3615E500774B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A18250631C3615E500774B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A18250651C3615E500774B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C3249C1C38B30500BDE3C4 /* GTGController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTGController.swift; sourceTree = "<group>"; };
 		A1EB37C41C361653007800B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1EB37C51C361653007800B8 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		A1EB37C61C361653007800B8 /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		A18250581C3615E500774B1F /* BARTable */ = {
 			isa = PBXGroup;
 			children = (
+				A1C3249C1C38B30500BDE3C4 /* GTGController.swift */,
 				A1EB37C41C361653007800B8 /* Assets.xcassets */,
 				A1EB37C51C361653007800B8 /* Base.lproj */,
 				A1EB37C61C361653007800B8 /* IntroController.swift */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C3249D1C38B30500BDE3C4 /* GTGController.swift in Sources */,
 				A1EB37D81C361653007800B8 /* DController.swift in Sources */,
 				A1EB37DB1C361653007800B8 /* SWXMLHash.swift in Sources */,
 				A1EB37D21C361653007800B8 /* IntroController.swift in Sources */,
@@ -343,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -382,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,8 +401,9 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BARTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable;
+				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.Bartable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -409,8 +414,9 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BARTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable;
+				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.Bartable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -419,7 +425,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = TodayWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable.TodayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.Bartable.TodayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -430,7 +436,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = TodayWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.BARTable.TodayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = co.ndyg.Bartable.TodayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

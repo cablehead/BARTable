@@ -37,12 +37,12 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
                 statusHumanValue = "ALWAYS"
             case CLAuthorizationStatus.AuthorizedWhenInUse:
                 statusHumanValue = "When in Use"
-            default:
-                statusHumanValue = "n/a CLAuthorizationStatus"
         }
         Log("didChangeAuthorizationStatus: \(statusHumanValue)")
         if status == .AuthorizedAlways {
-            print("go")
+            let view = getApp().window!.rootViewController!
+            view.presentViewController(
+                GTGController(), animated: true, completion: nil)
         }
     }
 }
@@ -66,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
-            window!.rootViewController = S2Controller()
+            window!.rootViewController = GTGController()
         } else {
             window!.rootViewController = IntroController()
         }
